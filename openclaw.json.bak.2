@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "lastTouchedVersion": "0.1.5-fix.1",
+    "lastTouchedAt": "2026-03-04T11:46:37.554Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-04T01:34:48.222Z",
+    "lastRunVersion": "0.1.5-fix.1",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat"
+      },
+      "models": {
+        "deepseek/deepseek-chat": {
+          "alias": "DeepSeek Chat"
+        }
+      },
+      "workspace": "C:\\Users\\WH\\.openclaw\\workspace",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "feishu": {
+      "accounts": {
+        "default": {
+          "appId": "cli_a91331a9e7385cb0",
+          "appSecret": "NMW7yIah7R5waez4NWX4fdD03XRKY3pz",
+          "domain": "feishu",
+          "enabled": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "829089"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "C:\\Users\\WH\\AppData\\Roaming\\fnm\\node-versions\\v24.13.1\\installation\\node_modules\\openclaw-cn\\extensions\\feishu"
+      ]
+    },
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}

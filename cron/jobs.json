@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "37ceaaf8-2fdb-4425-95db-1615b25f0fda",
+      "agentId": "main",
+      "name": "Weekly Workspace Backup",
+      "createdAtMs": 1772630869630,
+      "updatedAtMs": 1772631273834,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "It's Monday 9:00 AM, time for weekly workspace backup. Please execute: powershell -ExecutionPolicy Bypass -File \"C:\\Users\\WH\\.openclaw\\workspace-assistant\\scripts\\weekly-backup-en.ps1\" This will: 1. Backup both workspace directories; 2. Generate backup report; 3. Clean old backups; 4. Send Feishu notification. Backup location: C:\\Users\\WH\\.openclaw\\backups\\"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {}
+    },
+    {
+      "id": "7c8a8d4c-2571-4abd-b092-1262dcac05fa",
+      "agentId": "main",
+      "name": "每日AI资讯整理",
+      "createdAtMs": 1772726927507,
+      "updatedAtMs": 1772726927507,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "整理前一天AI圈的最新资讯，包括：1. 重要技术突破 2. 行业动态 3. 政策变化 4. 投资融资 5. 重要产品发布。要求：简洁明了，突出重点，中文报告。来源：主流科技媒体、AI专业网站、行业报告等。"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {}
+    },
+    {
+      "id": "83a3624f-18e3-47ea-9962-58102c9c19cc",
+      "agentId": "main",
+      "name": "AI圈每日资讯整理",
+      "enabled": true,
+      "createdAtMs": 1772761260869,
+      "updatedAtMs": 1772761260869,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "执行AI圈每日资讯整理任务：搜索前一天AI圈最新资讯，包括技术进展、大模型动态、应用案例、行业新闻等，整理成简洁摘要并提供相关链接。"
+      },
+      "state": {
+        "nextRunAtMs": 1772838000000
+      }
+    }
+  ]
+}
