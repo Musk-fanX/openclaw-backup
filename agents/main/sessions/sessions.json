@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "d27ecd5a-45f9-41a3-bad1-ddef6a3c79fc",
-    "updatedAt": 1772767332729,
+    "updatedAt": 1772808743077,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -559,7 +559,7 @@
     "contextTokens": 128000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772767124186,
+      "generatedAt": 1772808727552,
       "sessionId": "d27ecd5a-45f9-41a3-bad1-ddef6a3c79fc",
       "sessionKey": "agent:main:main",
       "provider": "deepseek",
@@ -571,8 +571,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 43271,
-        "projectContextChars": 20281,
+        "chars": 37199,
+        "projectContextChars": 14209,
         "nonProjectContextChars": 22990
       },
       "injectedWorkspaceFiles": [
@@ -580,16 +580,16 @@
           "name": "AGENTS.md",
           "path": "C:\\Users\\WH\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 10001,
-          "injectedChars": 10001,
+          "rawChars": 7783,
+          "injectedChars": 7783,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\WH\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1548,
-          "injectedChars": 1548,
+          "rawChars": 1664,
+          "injectedChars": 1664,
           "truncated": false
         },
         {
@@ -604,24 +604,24 @@
           "name": "IDENTITY.md",
           "path": "C:\\Users\\WH\\.openclaw\\workspace\\IDENTITY.md",
           "missing": false,
-          "rawChars": 1056,
-          "injectedChars": 1056,
+          "rawChars": 629,
+          "injectedChars": 629,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "C:\\Users\\WH\\.openclaw\\workspace\\USER.md",
           "missing": false,
-          "rawChars": 683,
-          "injectedChars": 683,
+          "rawChars": 478,
+          "injectedChars": 478,
           "truncated": false
         },
         {
           "name": "HEARTBEAT.md",
           "path": "C:\\Users\\WH\\.openclaw\\workspace\\HEARTBEAT.md",
           "missing": false,
-          "rawChars": 262,
-          "injectedChars": 262,
+          "rawChars": 166,
+          "injectedChars": 166,
           "truncated": false
         },
         {
@@ -630,14 +630,6 @@
           "missing": false,
           "rawChars": 1444,
           "injectedChars": 1444,
-          "truncated": false
-        },
-        {
-          "name": "MEMORY.md",
-          "path": "C:\\Users\\WH\\.openclaw\\workspace\\MEMORY.md",
-          "missing": false,
-          "rawChars": 3196,
-          "injectedChars": 3196,
           "truncated": false
         },
         {

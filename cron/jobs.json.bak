@@ -66,6 +66,31 @@
       "state": {
         "nextRunAtMs": 1772838000000
       }
+    },
+    {
+      "id": "0446ee80-884a-4361-9ad6-44c5769e05d1",
+      "agentId": "main",
+      "name": "每日OpenClaw备份到backup仓库",
+      "enabled": true,
+      "createdAtMs": 1772803660344,
+      "updatedAtMs": 1772805999015,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每日OpenClaw工作空间备份到backup仓库。请运行备份脚本：powershell -ExecutionPolicy Bypass -File C:\\\\Users\\\\WH\\\\.openclaw\\\\workspace\\\\scripts\\\\daily-git-backup.ps1。脚本会自动：1. 检查Git状态；2. 提交未保存的更改；3. 推送到backup仓库（https://github.com/Musk-fanX/openclaw-backup.git）。完成后报告结果。"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772812800000
+      }
     }
   ]
 }
